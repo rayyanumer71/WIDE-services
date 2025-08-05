@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 12 in 2025</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: rgb(255, 255, 129);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .menu-btn {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-btn span {
+            height: 3px;
+            width: 25px;
+            background: black;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+
+        nav {
+            display: none;
+            flex-direction: column;
+            background-color: #333;
+            position: absolute;
+            top: 100px; /* lowered from 80px to 100px */
+            width: 100%;
+            z-index: 999;
+        }
+
+
+        nav a {
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            border-top: 1px solid #555;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .main {
+            padding: 140px 20px 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
+            color: #222;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .mainInsideTable {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            column-gap: 10px;
+            border: 1px solid gray;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .mainInsideTable p {
+            padding: 12px 10px;
+            margin: 0;
+            border-bottom: 1px solid gray;
+        }
+
+        .mainInsideTable p.headerRow {
+            background-color: #eee;
+            font-weight: bold;
+            border-top: 1px solid gray;
+        }
+        .iphone12-1{
+            height: 300px;
+        }
+        .iphone12-12{
+            height: 250px;
+        }
+        .footer-section{
+            display: block;
+            
+        }
+        footer{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(255, 255, 129);
+        }
+        .para-12{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .mainInsideTable {
+                display: block;
+            }
+
+            .mainInsideTable p {
+                display: block;
+                width: 100%;
+            }
+            .iphone12-1{
+                width: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>WIDE · Web Innovation & Digital Engineering</h2>
+        <div class="menu-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav id="nav-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="main">
+        <img src="jepgioejgoejigjepgijegjp.jpg" class="iphone12-1">
+        <img src="apple_iphone-12_2-up_geo_10132020_inline.jpg.large.jpg" class="iphone12-1">
+        <img src="apple_iphone-12-spring21_purple_04202021_big.jpg.large.jpg" class="iphone12-12">
+        <h1>iPhone 12 in 2025</h1>
+        <p>The iPhone 12 marked a turning point in Apple’s smartphone lineup. It introduced 5G to iPhones, brought back the beloved flat-edge design, and featured a stunning Super Retina XDR OLED display. Paired with the powerful A14 Bionic chip, it was future-ready right out of the box.</p>
+        <p>Now, in 2025, with the iPhone 16 series already out, many are asking: Is the iPhone 12 still worth buying?</p>
+
+        <h2>Key Specs</h2>
+        <div class="mainInsideTable">
+            <p class="headerRow">Feature</p> <p class="headerRow">Details</p>
+            <p>Display</p> <p>6.1" Super Retina XDR OLED</p>
+            <p>Processor</p> <p>A14 Bionic chip</p>
+            <p>Rear Camera</p> <p>Dual 12 MP (Wide + Ultra-Wide)</p>
+            <p>Front Camera</p> <p>12 MP with Night Mode</p>
+            <p>Battery Life</p> <p>~17 hours video playback</p>
+            <p>Build</p> <p>Ceramic Shield, Aluminum body</p>
+            <p>Water Resistance</p> <p>IP68 (up to 6m for 30 min)</p>
+            <p>Charging</p> <p>MagSafe, Qi wireless, 20W fast charging</p>
+            <p>Software</p> <p>Upgradable to iOS 18, likely iOS 19 & 20</p>
+        </div>
+
+        <h2>Camera Performance</h2>
+        <p>The iPhone 12 still captures stunning photos in 2025. Thanks to Night Mode on all cameras, Smart HDR 3, and Deep Fusion, it handles both day and low-light shots gracefully. It may not have a telephoto lens like the Pro models, but for casual users and content creators, it still does a solid job.</p>
+        <p>And yes – Dolby Vision 4K video recording is still a rare gem at this price.</p>
+
+        <h2>Performance & Daily Use</h2>
+        <p>With the A14 Bionic, you get smooth performance whether you’re gaming, multitasking, editing videos, or scrolling social media. While newer chips like A16 or A17 are faster, the difference is mostly noticeable in heavy tasks. For everyday users? The iPhone 12 still flies.</p>
+
+        <h2>Design & Build</h2>
+        <p>The return of the flat-edge design was a hit, and it still looks modern today. The Ceramic Shield front makes it more durable than older models, and the aluminum frame feels both premium and light in hand.</p>
+        <p>Plus, it’s available in cool colors like Black, White, Blue, Green, Purple, and Product(RED).</p>
+
+        <h2>Battery Life & Charging</h2>
+        <p>Battery life is decent, though not outstanding by 2025 standards. You’ll get through the day with moderate use. It supports 20W fast charging, MagSafe, and Qi wireless charging, but note: Apple stopped including chargers in the box starting with this model.</p>
+        <p>So, yes, you’ll probably need to buy your own adapter.</p>
+
+        <h2>Software Support</h2>
+        <p>The iPhone 12 shipped with iOS 14 and is now running iOS 18. Apple usually supports devices for about 6–7 years, so you can expect updates through iOS 20 or even longer. That means at least 2–3 more years of updates, keeping your phone secure and fresh.</p>
+
+        <h2>Where It Falls Short</h2>
+        <ul>
+            <li>No 120Hz display (still 60Hz)</li>
+            <li>Base model starts at 64GB storage</li>
+            <li>Lacks telephoto zoom and LiDAR (found in Pro models)</li>
+            <li>Battery life is average, not great</li>
+            <li>No fingerprint scanner (only Face ID)</li>
+        </ul>
+
+        <h2>Verdict – Should You Buy iPhone 12 in 2025?</h2>
+        <p><strong>YES – if you’re on a budget.</strong></p>
+        <p>The iPhone 12 offers solid performance, great cameras, premium design, and iOS updates for a few more years. If you can get it refurbished or used in good condition, it’s a fantastic mid-range iPhone.</p>
+        <p>But if you want better battery, camera zoom, or a 120Hz display, look toward the iPhone 13 Pro, 14 Pro, or newer.</p>
+    </div>
+    <footer>
+        <p class="para-12">
+            WIDE services
+
+        </p>
+        <p>
+            Contact 034710107 or rayyanumer71@gmail.com
+        </p>
+        <p>
+            all rights reserved
+        </p>
+
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("nav-menu");
+            nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</body>
+</html>
