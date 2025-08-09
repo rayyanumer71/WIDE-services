@@ -31,13 +31,14 @@
       background-color: rgb(9, 58, 49);
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 40px;
-      min-width: 200px;
+      padding: 10px 0; /* flexible height */
     }
     .nav1-1 {
       display: flex;
-      gap: 30px;
+      flex-direction: row;
+      flex-wrap: wrap; /* allows wrapping if too small */
+      gap: 20px;
+      justify-content: center;
     }
     .links, .links1 {
       color: white;
@@ -95,38 +96,53 @@
       padding: 20px;
       margin-top: 40px;
     }
+     /* Mobile adjustments */
     @media screen and (max-width: 768px) {
-      .nav1-1 {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
       h1 {
         font-size: 2rem;
       }
+
       .title1 {
         font-size: 1rem;
         text-align: center;
       }
+
       .container {
         padding: 10px;
       }
+
       table {
         font-size: 0.9rem;
       }
+
       th, td {
         padding: 8px;
       }
+
       ul {
         font-size: 1rem;
       }
+
       .photo-2 {
         flex: 1 1 100%;
       }
+
       footer p {
         font-size: 0.9rem;
       }
+      
     }
+    @media screen and (min-width: 500px) {
+      photo-2 {
+
+
+      border-radius: 10px;
+      object-fit: cover;
+
+      max-width: 100px ;
+
+    }
+
   </style>
 </head>
 <body>
@@ -139,8 +155,8 @@
   <nav class="nav1">
     <div class="nav1-1">
       <a href="#" class="links1">Home</a>
-      <a href="#" class="links">Blogs</a>
-      <a href="#" class="links">Contact</a>
+      <a href="#" class="links1">Blogs</a>
+      <a href="#" class="links1">Contact</a>
     </div>
   </nav>
 
@@ -200,5 +216,3 @@
 
 </body>
 </html>
-
-
