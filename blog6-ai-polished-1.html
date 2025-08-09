@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Web Innovation and Digital engineering">
+  <meta name="description" content="Web Innovation and Digital Engineering">
   <title>WIDE – Web Innovation and Digital Engineering</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
@@ -60,6 +60,7 @@
     }
     ul {
       line-height: 1.8;
+      padding-left: 20px;
     }
     table {
       width: 100%;
@@ -74,12 +75,17 @@
     th {
       background-color: #e0e0e0;
     }
-    .photo-section{
-
+    .photo-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
-    .photo-2{
-      height: 450px;
-      width: auto;
+    .photo-2 {
+      flex: 1 1 calc(33% - 10px);
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      max-height: 450px;
     }
     footer {
       background-color: rgb(7, 42, 62);
@@ -89,42 +95,37 @@
       margin-top: 40px;
     }
     @media screen and (max-width: 768px) {
-    .nav1-1 {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+      .nav1-1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .title1 {
+        font-size: 1rem;
+        text-align: center;
+      }
+      .container {
+        padding: 10px;
+      }
+      table {
+        font-size: 0.9rem;
+      }
+      th, td {
+        padding: 8px;
+      }
+      ul {
+        font-size: 1rem;
+      }
+      .photo-2 {
+        flex: 1 1 100%;
+      }
+      footer p {
+        font-size: 0.9rem;
+      }
     }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    .title1 {
-      font-size: 1rem;
-      text-align: center;
-    }
-
-    .container {
-      padding: 10px;
-    }
-
-    table {
-      font-size: 0.9rem;
-    }
-
-    th, td {
-      padding: 8px;
-    }
-
-    ul {
-      font-size: 1rem;
-    }
-
-    footer p {
-      font-size: 0.9rem;
-    }
-}
-
   </style>
 </head>
 <body>
@@ -134,70 +135,65 @@
     <p class="title1">Web Innovation and Digital Engineering</p>
   </header>
 
-  <div class="nav1">
+  <nav class="nav1">
     <div class="nav1-1">
       <a href="#" class="links1">Home</a>
       <a href="#" class="links">Blogs</a>
       <a href="#" class="links">Contact</a>
     </div>
-  </div>
+  </nav>
 
   <div class="container">
 
-    <div class="section">
+    <section class="section">
       <h2>About WIDE</h2>
       <p>
-        WIDE is a online partner that will help you decide between digital products and bring you with the latest news on tech.
+        WIDE is your online partner for making informed decisions about digital products. We bring you the latest news in technology and honest, detailed reviews.
       </p>
-      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="Innovation">
-    </div>
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="Innovation workspace with technology">
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Our Services</h2>
       <ul style="font-size: 1.1rem;">
         <li>Mobile Reviews</li>
-        <li>software reviews</li>
-        <li>pc reviews</li>
-        <li>latest news on tech</li>
-        <li>Tech reviews</li>
+        <li>Software Reviews</li>
+        <li>PC Reviews</li>
+        <li>Latest Tech News</li>
+        <li>In-Depth Tech Analysis</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Our Work</h2>
       <div class="photo-section">
-        <img src="pexels-doouglasma-14666032.jpg" class="photo-2">
-        <img src="pexels-joshsorenson-1054397.jpg" class="photo-2">
-        <img src="pexels-myleskuo-2399840.jpg" class="photo-2">
+        <img src="pexels-doouglasma-14666032.jpg" class="photo-2" alt="Laptop and coffee cup on a desk">
+        <img src="pexels-joshsorenson-1054397.jpg" class="photo-2" alt="Person using a professional camera">
+        <img src="pexels-myleskuo-2399840.jpg" class="photo-2" alt="Close-up of circuit board technology">
       </div>
-      
       <p>
-        We focus on different Aspects of technology and digital engineering.
+        We cover all aspects of technology and digital engineering with a focus on accuracy and relevance.
       </p>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Why Us?</h2>
+    <section class="section">
+      <h2>Why Choose Us?</h2>
       <p>
-        We test products that you are willing to buy, from 5 year old iphone to newest samsung. We share truely honest reviews covering the advantages and disadvantages of any product. We respect our customers more then anything. Thank you Very much for visiting our site and putting your trust in us.
+        We test products you’re interested in — from a 5-year-old iPhone to the latest Samsung flagship. Our reviews are 100% honest, covering both advantages and disadvantages. We value our customers above all else. Thank you for visiting our site and trusting us.
       </p>
-      
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Contact Us</h2>
-      <p>
-        Feel free to contact us on any concern.
-        <p>📞 Phone: 03347101037</p>
+      <div>
+        <p>📞 Phone: 0334 7101037</p>
         <p>✉️ Email: rayyanumer71@gmail.com</p>
-      </p>
-      
-    </div>
+      </div>
+    </section>
 
   </div>
 
   <footer>
-
     <p>&copy; 2025 WIDE. All Rights Reserved.</p>
   </footer>
 
