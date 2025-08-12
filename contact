@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+                background-color: #f5f5f5;
+            }
+            header {
+                background-color: rgb(7, 42, 62);
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+            }
+            .title{
+                color: white;
+            }
+            .title1{
+                color: white;
+            }
+            .title1 {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 1.2rem;
+                margin-top: 5px;
+            }
+            h1 {
+                margin: 0;
+                font-size: 2.5rem;
+                font-family: Arial;
+            }
+            .nav1 {
+                background-color: rgb(9, 58, 49);
+                display: flex;
+                justify-content: center;
+                padding: 10px 0; /* flexible height */
+            }
+            .nav1-1 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap; /* allows wrapping if too small */
+                gap: 20px;
+                justify-content: center;
+            }
+            .links, .links1 {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .container {
+                padding: 20px;
+                max-width: 1000px;
+                margin: auto;
+                background-color: white;
+            }
+            .image-1{
+                height: 100%;
+                width: 100%;
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            footer {
+                background-color: rgb(7, 42, 62);
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+
+            
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>WIDE</h1>
+            <p class="title1">Web Innovation and Digital Engineering</p>
+        </header>
+
+        <nav class="nav1">
+            <div class="nav1-1">
+                <a href="#" class="links1">Home</a>
+                <a href="#" class="links1">Blogs</a>
+                <a href="#" class="links1">Contact</a>
+            </div>
+        </nav>
+        <div class="container">
+            <h2>For Help Contact:</h2>
+            <p>Phone number:03347101037</p>
+            <p>gmail : rayyanumer71@gmail.com</p>
+            <h2>We never Upset you</h2>
+            <p>It is our Promise to you that we will be proud to contact you as every customer of ours is worth a gem, over here you are the boss!</p>
+            <img src="helpline-1.jpg" class="image-1">
+        </div>
+        <footer>
+            <p>&copy; 2025 WIDE. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
