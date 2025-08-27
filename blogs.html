@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="wide.png" type="image/png">
-  
   <meta charset="UTF-8">
   <meta name="description" content="Web Innovation and Digital Engineering">
   <title>WIDE – Web Innovation and Digital Engineering</title>
@@ -33,16 +31,15 @@
       background-color: rgb(9, 58, 49);
       display: flex;
       justify-content: center;
-      padding: 10px 0; /* flexible height */
+      padding: 10px 0;
     }
     .nav1-1 {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; /* allows wrapping if too small */
+      flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
     }
-    .links, .links1 {
+    .links1 {
       color: white;
       text-decoration: none;
       font-weight: bold;
@@ -53,38 +50,84 @@
       margin: auto;
       background-color: white;
     }
-    .section {
-      margin-bottom: 40px;
+    .inside-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
     }
-    
-    ul {
-      line-height: 1.8;
-      padding-left: 20px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background-color: #e0e0e0;
-    }
-    .photo-section {
+    .blog-1 {
+      margin-top: 30px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+      flex-direction: column;
+      background-color: lightblue;
+      max-width: 100%;
+      width: auto;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      min-width: 250px;
+      min-height: 250px;
     }
-    .photo-2 {
-      flex: 1 1 calc(33% - 10px);
+    .blog-top-section {
+      background-color: rgb(9, 58, 49);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+    .blog-bottom-section {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(7, 42, 62);
+      color: white;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .blog-left-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .blog-right-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+    .para-in-blog {
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+    }
+    .read-button {
+      background-color: rgb(99, 99, 255);
+      height: 40px;
+      width: 100px;
+      border-radius: 20px;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: opacity 0.15s, box-shadow 0.15s;
+    }
+    .read-button:hover {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      opacity: 0.8;
+    }
+    .read-button:active {
+      opacity: 0.5;
+      box-shadow: none;
+    }
+    .image-1 {
+      width: 100%;
       height: auto;
-      border-radius: 10px;
+      border-radius: 20px;
       object-fit: cover;
-      max-height: 450px;
     }
     footer {
       background-color: rgb(7, 42, 62);
@@ -93,156 +136,19 @@
       padding: 20px;
       margin-top: 40px;
     }
-    .image-1{
-        width:92%;
-        padding: 5px 5px 5px 5px;
-        border-radius: 20px;
-
+    .image-2{
+      width: 100%;
     }
-    p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
+    /* Mobile adjustments */
+    @media screen and (max-width: 500px) {
+      h1 { font-size: 2rem; }
+      .title1 { font-size: 1rem; }
+      .inside-container { grid-template-columns: 1fr; }
+      .para-in-blog { font-size: 13px; }
     }
-    .blog-1{
-
-        display: flex;
-        flex-direction: column;
-        
-        background-color: lightblue;
-        max-width: 35%;
-        max-height: 300px;
-        width: auto;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        border-radius: 20px;
-        min-width:300px;
-        min-height: 300px;
-
-    }
-    .blog-top-section{
-        background-color: rgb(9, 58, 49);
-        flex: 1;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    .blog-bottom-section{
-        flex: 3;
-
-        display: flex;
-        flex-direction: row;
-        background-color: rgba(7, 42, 62);
-        color:white;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-
-
-    }
-    .blog-right-section{
-        flex: 1;
-    }
-    .blog-left-section{
-        flex: 1;
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-    }
-    .blog-left-top-section{
-        display: flex;
-        flex: 2;
-        justify-content: center;
-    }
-    .blog-left-bottom-section{
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .para-in-blog{
-        font-size: 17px;
-        font-family: 'roboto';
-        padding-left: 10px;
-
-    }
-    .read-button{
-        background-color: rgb(99, 99, 255);
-        height: 40px;
-        width: 90px;
-        border-radius: 20px;
-        border: none;
-        color: white;
-        font-size: 18px;
-        font-family: 'roboto';
-        cursor: pointer;
-        transition: opacity 0.15s, box-shadow 0.15s;
-    }
-    .read-button:hover{
-        box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
-        opacity: 0.7;
-    }
-    .read-button:active{
-        opacity: 0.5;
-        box-shadow: 0px;
-    }
-    
-
-
-     /* Mobile adjustments */
-    @media screen and (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .title1 {
-        font-size: 1rem;
-        text-align: center;
-      }
-
-      .container {
-        padding: 10px;
-      }
-
-      table {
-        font-size: 0.9rem;
-      }
-
-      th, td {
-        padding: 8px;
-      }
-
-      ul {
-        font-size: 1rem;
-      }
-
-      .photo-2 {
-        flex: 1 1 100%;
-      }
-
-      footer p {
-        font-size: 0.9rem;
-      }
-      
-    }
-    @media screen and (min-width: 500px) {
-      .image-1{
-
-
-      border-radius: 10px;
-      object-fit: cover;
-
-      
-
-    }
-  }
-
   </style>
 </head>
 <body>
-
   <header>
     <h1>WIDE</h1>
     <p class="title1">Web Innovation and Digital Engineering</p>
@@ -255,52 +161,52 @@
       <a href="https://rayyanumer71.github.io/WIDE-services/contact.html" class="links">Contact</a>
     </div>
   </nav>
-
+  
   <div class="container">
     <h2>Blogs</h2>
-    <div class="blog-1">
+    <div class="inside-container">
+      <div class="blog-1">
         <div class="blog-top-section">
-            <h3>IPhone 12 In 2025?</h3>
+          <h3>IPhone 12 In 2025?</h3>
         </div>
         <div class="blog-bottom-section">
-            <div class="blog-left-section">
-                <div class="blog-left-top-section" >
-                    <p class="para-in-blog">
-                        Is Iphone 12 still worth the hype in 2025, our authors have done excellent work to bring.....
-                    </p>
-                </div>
-                <div class="blog-left-bottom-section" >
-                    <button class="read-button" onclick="
-                        window.open('https://rayyanumer71.github.io/WIDE-services/blog1.html')
-                        
-                        ">
-                        Read &rarr;
-                    </button>
-                </div>
-            
-            </div>
-            <div class="blog-right-section">
-                <img src="iphone-12.jpg" class="image-1">
-            </div>
+          <div class="blog-left-section">
+            <p class="para-in-blog">
+              Is iPhone 12 still worth the hype in 2025? Our authors have done excellent work to bring...
+            </p>
+            <button class="read-button" onclick="window.open('https://rayyanumer71.github.io/WIDE-services/blog1.html')">
+              Read →
+            </button>
+          </div>
+          <div class="blog-right-section">
+            <img src="iphone-12.jpg" alt="iPhone 12" class="image-1">
+          </div>
         </div>
-        
+      </div>
+
+      <div class="blog-1">
+        <div class="blog-top-section">
+          <h3>IPhone 12 vs 12 Mini</h3>
+        </div>
+        <div class="blog-bottom-section">
+          <div class="blog-left-section">
+            <p class="para-in-blog">
+              What is the best base model of iPhone 12 to buy right now, to find out clikc read..
+            </p>
+            <button class="read-button" onclick="window.open('window.open('https://rayyanumer71.github.io/WIDE-services/blog2.html')')">
+              Read →
+            </button>
+          </div>
+          <div class="blog-right-section">
+            <img src="photo1.jpg" alt="iPhone 12 vs Mini" class="image-1">
+          </div>
+        </div>
+      </div>
     </div>
-
-
-    
-
   </div>
-
+  
   <footer>
     <p>&copy; 2025 WIDE. All Rights Reserved.</p>
   </footer>
-
-
 </body>
 </html>
-
-
-
-
-
-
