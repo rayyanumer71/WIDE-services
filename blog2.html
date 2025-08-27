@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Web Innovation and Digital Engineering">
+  <title>WIDE – Web Innovation and Digital Engineering</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: rgb(7, 42, 62);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      display: inline-block;
+    }
+    h2{
+        font-family: 'roboto';
+        display: inline-block;
+    }
+    .title1 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.2rem;
+      margin-top: 5px;
+    }
+    .nav1 {
+      background-color: rgb(9, 58, 49);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0; /* flexible height */
+    }
+    .nav1-1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; /* allows wrapping if too small */
+      gap: 20px;
+      justify-content: center;
+    }
+    .links, .links1 {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    ul {
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #e0e0e0;
+    }
+    .photo-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .photo-2 {
+      flex: 1 1 calc(33% - 10px);
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      max-height: 450px;
+    }
+    footer {
+      background-color: rgb(7, 42, 62);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    p{
+        font-family: 'roboto';
+        font-size: 18px;
+        font-weight: 500;
+    }
+    li{
+        font-family: 'roboto';
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+    }
+    .box-left{
+        flex: 2;
+    }
+    .box-right{
+        flex: 1;
+    }
+    .image-2{
+        height: 68%;
+        width: 90%;
+        border-radius: 20px;
+        padding-right: 10px;
+    }
+    h2{
+        display: inline-block;
+        font-family: 'roboto';
+    }
+    .image-1{
+        width: 60%;
+       
+      }
+     /* Mobile adjustments */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+        display: inline-block;
+      }
+
+      .title1 {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .container {
+        padding: 10px;
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+
+      th, td {
+        padding: 8px;
+      }
+
+      ul {
+        font-size: 1rem;
+      }
+
+      .photo-2 {
+        flex: 1 1 100%;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+      }
+      .image-1{
+        height: 300px;
+        width: auto;
+      }
+      
+    }
+    @media screen and (max-width: 600px) {
+      photo-2 {
+      border-radius: 10px;
+      object-fit: cover;
+      max-width: 100px ;
+    }
+    p{
+        font-size: 15px;
+    }
+    
+  }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>WIDE</h1>
+    <p class="title1">Web Innovation and Digital Engineering</p>
+  </header>
+
+  <nav class="nav1">
+    <div class="nav1-1">
+      <a href="#" class="links1">Home</a>
+      <a href="#" class="links1">Blogs</a>
+      <a href="#" class="links1">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>iPhone 12 vs iPhone 12 Mini – Which Should You Choose?</h1>
+
+        <img src="photo1.jpg"  alt="iPhone 12 and 12 Mini side by side">
+
+        <p>
+            Apple released both the iPhone 12 and the iPhone 12 Mini in the same year, offering nearly identical specs in two different sizes. But which one should you buy? Here’s a breakdown of the key differences and similarities to help you make the right choice.
+        </p>
+
+        <img src="iphone-12-12-mini-header-4-scaled.jpg" class="image-1">
+
+        <h2>Comparison Table</h2>
+
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>iPhone 12</th>
+                <th>iPhone 12 Mini</th>
+            </tr>
+            <tr>
+                <td>Display Size</td>
+                <td>6.1-inch Super Retina XDR</td>
+                <td>5.4-inch Super Retina XDR</td>
+            </tr>
+            <tr>
+                <td>Battery Life</td>
+                <td>Up to 17 hours video playback</td>
+                <td>Up to 15 hours video playback</td>
+            </tr>
+            <tr>
+                <td>Dimensions</td>
+                <td>146.7 x 71.5 x 7.4 mm</td>
+                <td>131.5 x 64.2 x 7.4 mm</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>164g</td>
+                <td>135g</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>Higher</td>
+                <td>Lower</td>
+            </tr>
+            <tr>
+                <td>Performance</td>
+                <td colspan="2">Both use the A14 Bionic chip – performance is identical</td>
+            </tr>
+        </table>
+
+        <h3>Camera</h3>
+        <p>
+          If you are searching for better camera systems, you will find no difference between the two models. Both have the same 12 MP wide + ultra-wide cameras, support Dolby Vision, and record 4K at 60 fps.
+        </p>
+
+        <img src="Apple_ShotoniPhone_NIKCHU_hero_011221_big.jpg.large.jpg" class="image-1" style="display: block;">
+
+        <h3>Performance</h3>
+        <p>Both use Apple’s A14 Bionic chip, but the Mini heats up more than the base iPhone 12, which can reach 40 °C+ on a normal summer day with heavy gaming. It is still one of the best 60 fps gaming devices for its price range, but you will definitely need a cooler.</p>
+        <p>The iPhone 12 mini scores <strong>1,072,354</strong> on AnTuTu according to Kimovil.com, while in our own testing the iPhone 12 reached a higher score of <strong>1,100,930</strong>. Both are still comparatively better than the Snapdragon 8 Gen 1 (used in the Galaxy S22), which also suffered from overheating issues.</p>
+
+        <h3>Battery Performance</h3>
+        <p>Both the iPhone 12 and 12 mini suffer from battery issues. Most units now have at most 95% health, which is low by 2025 standards. In our experience, the iPhone 12 lasts around <strong>4 hours of use per full charge (with light gaming)</strong>, while the iPhone 12 mini lasts less than <strong>3.5 hours</strong> under similar use.</p>
+        <p>The iPhone 12 has a <strong>2,815 mAh</strong> battery, which is actually smaller than the iPhone 11’s, while the iPhone 12 mini has a <strong>2,227 mAh</strong> battery.</p>
+
+        <h3>Display</h3>
+        <p>Both have Super Retina XDR OLED displays with a 60 Hz refresh rate. The difference is barely noticeable, except that the iPhone 12 mini has a slightly higher pixel density (476 ppi compared to the iPhone 12’s 460 ppi).</p>
+
+        <h2>Pros and Cons</h2>
+        <ul>
+            <li><strong>iPhone 12 Pros:</strong> Bigger display, slightly better battery</li>
+            <li><strong>iPhone 12 Cons:</strong> More expensive, less pocket-friendly</li>
+            <li><strong>iPhone 12 Mini Pros:</strong> Compact size, same power, more affordable</li>
+            <li><strong>iPhone 12 Mini Cons:</strong> Smaller screen, shorter battery life</li>
+        </ul>
+
+        <p>
+            If you prefer one-handed use and portability, the Mini is an excellent choice. If you consume a lot of content or prefer a larger screen, the iPhone 12 offers more comfort. Both are fantastic options with flagship specs — the choice depends on your lifestyle.
+        </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 WIDE. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
